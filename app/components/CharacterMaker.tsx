@@ -291,9 +291,6 @@ export function CharacterMaker() {
                   <span className="file-select-label">またはファイルを選択</span>
                   <small>PSDはブラウザ内で処理され、外部へ送信されません</small>
                 </span>
-                <span className="illustration-placeholder" aria-hidden="true">
-                  <span>ILLUSTRATION AREA</span>
-                </span>
               </button>
             )}
           </div>

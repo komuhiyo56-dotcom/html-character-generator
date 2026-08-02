@@ -140,11 +140,9 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
 @keyframes breath-standard { 0%,100% { transform: translateY(0) scaleY(1); } 50% { transform: translateY(-.35%) scaleY(1.015); } }
 
 .drop-prompt {
-  width: min(760px, 88%);
+  width: min(560px, 88%);
   min-height: 330px;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 250px;
-  align-items: stretch;
+  display: block;
   padding: 0;
   overflow: hidden;
   border: 1px solid #87908a;
@@ -156,6 +154,7 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
 }
 .drop-prompt:hover { border-color: var(--accent-dark); background: #edf0ee; }
 .drop-copy {
+  min-height: 330px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -178,16 +177,6 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
   font-weight: 700;
 }
 .drop-copy small { margin-top: 16px; color: var(--fine); font-size: 11px; line-height: 1.5; }
-.illustration-placeholder {
-  min-height: 280px;
-  display: grid;
-  place-items: center;
-  margin: 20px;
-  border: 1px solid #aab0ac;
-  background: #dde0de;
-  color: #858b87;
-}
-.illustration-placeholder > span { padding: 5px 8px; background: #dde0de; font: 11px/1 Consolas, monospace; letter-spacing: .08em; }
 
 .preview-controls {
   min-height: 44px;
@@ -403,7 +392,6 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
   .drop-prompt { width: min(94%, 500px); min-height: 280px; display: block; }
   .drop-copy { min-height: 280px; padding: 28px 24px; }
   .drop-copy strong { font-size: 20px; }
-  .illustration-placeholder { display: none; }
   .preview-card { min-height: 400px; }
   .side-panel { grid-template-rows: minmax(360px, 55vh) auto auto; }
   .layer-row { min-height: 42px; }
