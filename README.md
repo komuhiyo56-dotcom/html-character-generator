@@ -6,7 +6,7 @@ PSDから、立ち絵つきのHTML作品を作成できるブラウザツール�
 
 ## アプリを開く
 
-**[HTML Character Generatorを使う](https://komuhiyo56-dotcom.github.io/html-character-generator/)**
+**[HTML Character Generatorを使う](https://komuhiyo.github.io/html-character-generator/)**
 
 Google Chromeなどの新しいブラウザで開いてください。
 
