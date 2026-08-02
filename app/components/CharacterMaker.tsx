@@ -246,6 +246,9 @@ export function CharacterMaker() {
 
   return (
     <main className="app-shell">
+      <header className="app-titlebar">
+        <strong>HTML Character Generator</strong>
+      </header>
       <section className="workspace">
         <div
           className={`preview-card ${dragging ? "is-dragging" : ""}`}
@@ -282,10 +285,15 @@ export function CharacterMaker() {
               </div>
             ) : (
               <button className="drop-prompt" type="button" onClick={() => inputRef.current?.click()}>
-                <span className="drop-icon">PSD</span>
-                <strong>{loading ? "PSDを読み込んでいます…" : "ここにPSDをドロップ"}</strong>
-                <span>またはクリックしてファイルを選択</span>
-                <small>素材は外部へ送信されません</small>
+                <span className="drop-copy">
+                  <strong>{loading ? "PSDを読み込んでいます…" : "PSDをここにドロップ"}</strong>
+                  <span>レイヤー分けされたPSDから、<br />動くキャラクター作品を作成できます</span>
+                  <span className="file-select-label">またはファイルを選択</span>
+                  <small>PSDはブラウザ内で処理され、外部へ送信されません</small>
+                </span>
+                <span className="illustration-placeholder" aria-hidden="true">
+                  <span>ILLUSTRATION AREA</span>
+                </span>
               </button>
             )}
           </div>
