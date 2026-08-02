@@ -140,8 +140,8 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
 @keyframes breath-standard { 0%,100% { transform: translateY(0) scaleY(1); } 50% { transform: translateY(-.35%) scaleY(1.015); } }
 
 .drop-prompt {
-  width: min(560px, 88%);
-  min-height: 330px;
+  width: min(540px, 88%);
+  min-height: 310px;
   display: block;
   padding: 0;
   overflow: hidden;
@@ -149,20 +149,20 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
   border-radius: 3px;
   background: #e9ecea;
   color: var(--ink);
-  text-align: left;
+  text-align: center;
   cursor: pointer;
 }
 .drop-prompt:hover { border-color: var(--accent-dark); background: #edf0ee; }
 .drop-copy {
-  min-height: 330px;
+  min-height: 310px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   padding: 34px 38px;
 }
 .drop-copy strong { font-size: 23px; line-height: 1.35; }
-.drop-copy > span:not(.file-select-label) { margin-top: 14px; color: #4f5652; font-size: 14px; line-height: 1.8; }
+.drop-copy > span:not(.file-select-label) { max-width: 380px; margin-top: 14px; color: #4f5652; font-size: 14px; line-height: 1.8; }
 .file-select-label {
   min-height: 42px;
   margin-top: 24px;
@@ -176,7 +176,7 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
   font-size: 13px;
   font-weight: 700;
 }
-.drop-copy small { margin-top: 16px; color: var(--fine); font-size: 11px; line-height: 1.5; }
+.drop-copy small { max-width: 390px; margin-top: 16px; color: var(--fine); font-size: 11px; line-height: 1.5; }
 
 .preview-controls {
   min-height: 44px;
